@@ -1,0 +1,14 @@
+.leftCard {
+  margin: 8px;
+  width: 10%;
+  min-width:20%;
+  background-color: rgb(67, 159, 196);
+  height: 400px;
+  padding: 10px;
+}
+
+.heading {
+  color: red;
+  font-size: 20px;
+  text-align: center;
+}

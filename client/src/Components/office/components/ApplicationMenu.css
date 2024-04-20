@@ -1,0 +1,25 @@
+.sidebar {
+  position: relative;
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
+.sidebar__menu__item {
+  display: flex;
+  border: none;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #000;
+  transition: color 0.3s ease-in-out;
+  background-color: #488bcb;
+  margin-top: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.sidebar__menu__item.active {
+  color: #fff;
+  background-color: #159c4c;
+  transition: color 0.3s ease-in-out;
+}

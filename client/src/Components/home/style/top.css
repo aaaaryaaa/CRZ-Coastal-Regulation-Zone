@@ -1,0 +1,46 @@
+.bkg {
+  background-color: #243b58;
+}
+.txt {
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  stroke: black;
+  font-size: 15px;
+}
+.dept {
+  font-weight: 400;
+}
+.ts {
+  text-align: right;
+  padding-top: 4px;
+  font-weight: bold;
+  color: black;
+}
+.aa {
+  border: 1px solid transparent;
+  font-size: 15;
+  background-color: #4089c8;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: white;
+}
+
+@media screen and (max-width: 950px) {
+  .col {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .row {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}

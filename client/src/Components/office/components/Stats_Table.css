@@ -1,0 +1,55 @@
+
+
+.TableContainer
+{
+/*   background-image: url(beach.jpg);
+  background-size: cover; */
+  /* height: 650px;
+  width: 1300px;
+  position: relative; */
+  width:100%;
+  position: relative;
+  text-align: center;
+}
+
+.TableHeader
+{
+  /* left:10%;
+  top:10%; */
+  position: relative;
+ 
+}
+
+.StatsTable
+{   
+    /* left:10%;
+    top:10%; */
+    position: relative;
+    border-collapse: collapse;
+    width:70%;
+}
+
+.StatsRow
+{
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+  font-size: 20px;
+}
+
+.cl1
+{
+  background-color: lightblue;
+}
+
+.cl2
+{
+  background-color: skyblue;
+}
+
+@media all and (max-width: 900px)
+{
+  .TableContainer{
+    width: 100%;
+  }
+}

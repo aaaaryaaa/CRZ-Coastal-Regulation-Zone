@@ -1,0 +1,23 @@
+.newApplication {
+  min-height: 20rem !important;
+  padding: 12px;
+}
+
+.details {
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-bottom: 30px;
+}
+
+.mainForm {
+  padding: 30px;
+  background-color: aliceblue;
+}
+
+.title {
+  padding-bottom: 20px;
+}
+
+.element {
+  padding: 0 !important;
+}

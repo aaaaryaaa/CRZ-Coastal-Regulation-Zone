@@ -1,0 +1,36 @@
+.di {
+  /* background-image: url(beach.jpg);
+  background-size: cover; */
+  height: 650px;
+  width: 100%;
+  position: relative;
+}
+
+.h {
+  /* top: 10%; */
+  /* left: 25%; */
+  /* margin:20px; */
+  padding: 20px;
+  position: relative;
+}
+.unoli {
+  top: 25%;
+  left: 25%;
+  position: fixed;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+.oli {
+  background-color: lightgreen;
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+  font-size: medium;
+}
+
+@media all and (max-width: 600px) {
+  div {
+    width: 100%;
+  }
+}

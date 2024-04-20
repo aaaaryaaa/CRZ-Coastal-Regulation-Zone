@@ -1,0 +1,70 @@
+.App {
+  /* text-align: center;
+<<<<<<< HEAD */
+  /* background-image:url('./beach.png') ;   */
+  /* ?background-color: #121212; */
+  /* background-color: #61dafb;  */
+  min-height: 100vh;
+  /* =======
+>>>>>>> 3a2bf01395d27cdaa7ad9154529dfb2952ae04f0 */
+  background-size: cover;
+  margin-left: -1%;
+}
+
+.AppHeader {
+  background-image: url("../../../Images/coast.jpg");
+  text-align: left;
+  background-size: cover;
+
+  vertical-align: middle;
+}
+.District {
+  margin: 2em;
+  display: inline-block;
+  vertical-align: top;
+  font-size: larger;
+}
+
+.applist {
+  background-color: #ffffff;
+  padding-left: 1%;
+  text-align: justify;
+}
+/* .Navigation{
+  color: black;
+  background-color: #3386ff;
+  padding: 0;
+  text-align: left;
+} */
+.SealImg {
+  display: inline-block;
+  height: 9%;
+  /* padding:1em; */
+  /* border-style:solid; */
+  /* border-color: crimson; */
+  margin-top: 2%;
+}
+.Coastal {
+  /* border-style: solid; */
+  margin: 3%;
+  display: inline-block;
+  /* border-color: red; */
+  vertical-align: top;
+  font-size: larger;
+  position: relative;
+  left: 30%;
+  color: #ffffff;
+}
+.MainContent {
+  background-image: url("../../../Images/coast.jpg");
+  background-size: cover;
+  padding: 1em;
+  height: 120vh;
+  /* display: flex; */
+}
+.cardwhole {
+  width: 50%;
+  padding: 5%;
+  margin: 3% auto;
+  color: rgb(98, 82, 247);
+}

@@ -1,0 +1,60 @@
+.homeCard * {
+  box-sizing: border-box;
+  margin: 5%;
+}
+
+.column {
+  margin: 1%;
+  padding: 15px;
+  display: inline-flex;
+}
+
+.row {
+  justify-content: center;
+  display: flex;
+  position: relative;
+}
+
+.homeCard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: inherit;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f3f3;
+  height: 14rem;
+  border-radius: 3%;
+  margin: 5%;
+}
+
+.homeCard:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1); /* this adds the "card" effect */
+}
+
+.Title {
+  padding: 2%;
+  /* font-weight: bold; */
+  margin-top:15% ;
+  font-family:'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+  font-size: x-large;
+}
+
+.btn {
+  width: 10rem;
+}
+.btn:hover {
+  color: white;
+}
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 720px) {
+  .column {
+    width: 90%;
+    margin: 10px;
+  }
+
+  .homeCard {
+    border-radius: 5%;
+    height: 10rem;
+  }
+}

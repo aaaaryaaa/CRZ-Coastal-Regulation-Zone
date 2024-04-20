@@ -1,0 +1,12 @@
+.newApplication {
+  min-height: 20rem !important;
+  padding: 12px;
+}
+
+.title {
+  padding-bottom: 20px;
+}
+
+.element {
+  padding: 0 !important;
+}

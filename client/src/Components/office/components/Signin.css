@@ -1,0 +1,21 @@
+a {
+    margin-left: 15px;
+  }
+  .cardText {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .cardTitle {
+    padding: 5px;
+  }
+  .mainContent {
+    max-width: 40% !important;
+    display: flexbox;
+    justify-content: center;
+    background-image: none;
+  }
+  .iconStyle {
+    color: #0e5ed6;
+    padding-top: 3px;
+    margin-top: 10px;
+  }

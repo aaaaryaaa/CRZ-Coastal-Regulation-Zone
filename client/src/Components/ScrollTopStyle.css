@@ -1,0 +1,38 @@
+
+
+.container {
+  width: 100%;
+  max-width: 600px; 
+}
+
+@media (max-width: 600px) {
+  .container {
+   width: 100%; 
+  }
+}
+
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+  }
+  
+  .scroll-to-top:hover {
+    background-color: #0069d9;
+  }
+  
+  .scroll-to-top svg {
+    font-size: 20px;
+  }
+  

@@ -1,0 +1,23 @@
+.rowHeader {
+  background-color: rgba(22, 112, 163, 0.54);
+  align-items: center;
+  text-align: center;
+  margin: 2px;
+  margin-top: 5px;
+  margin-bottom: 6px;
+  padding: 3px;
+  height: 38px;
+  font-weight: bold;
+}
+
+.rowText {
+  background-color: #a0d5e1;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2px;
+  padding: 3px;
+  height: 32px;
+}
+.taskName {
+  color: red;
+}

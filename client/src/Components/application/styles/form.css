@@ -1,0 +1,46 @@
+.mainForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.mainForm * {
+  margin: 5px 0;
+  width: 100%;
+  padding: 5px 0;
+}
+
+.textbox input {
+  height: 30px;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+}
+/* 
+.check * {
+  width: "fit-content";
+} */
+
+.upload {
+  border: 1px solid black;
+}
+
+.btn1 {
+  border-radius: 50px;
+
+  width: 40%;
+  height: 40px;
+  align-self: center;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+.btn1:hover {
+  cursor: pointer;
+  background-color: rgb(123, 168, 168) !important;
+  font-size: 18px;
+}

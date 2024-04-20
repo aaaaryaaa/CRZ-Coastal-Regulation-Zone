@@ -1,0 +1,52 @@
+  *
+  {
+    margin: 0;
+    padding: 0;
+  }
+  .app
+  {
+    padding-top: 20px;
+    width:100vw;
+    height:100vh;
+  }
+
+  .Heading
+  {
+    text-align: center;
+    margin-right: 10vw;
+    display: block;
+  }
+  
+  .chartcontainer
+  {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: lightblue;
+    margin: 0px 10vw 0px 10vw;
+    width:80vw;
+    font-size: 1.3vw;
+    border: 2px solid black;
+    border-radius: 2px;
+  }
+  .Form{
+ background-color:'white';
+  }
+  .Tb
+  {
+    display: list-item;
+    margin-left: 10px;
+    margin-top: 10px;
+    list-style: none;
+    width:100%;
+    border-style: solid;
+    border-color: lawngreen;
+  }
+  
+  .but
+  {
+    display: list-item;
+    margin-left: 40px;
+    list-style: none; 
+    padding: 5px 10px 5px 10px;
+
+  }

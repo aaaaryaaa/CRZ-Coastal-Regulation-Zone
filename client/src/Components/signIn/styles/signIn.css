@@ -1,0 +1,38 @@
+.resend {
+  margin-left: 15px;
+}
+.resend:hover {
+  color: #4089c8;
+}
+.cardText {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.cardTitle {
+  padding: 5px;
+}
+.mainContent {
+  max-width: 40%;
+  display: flexbox;
+  justify-content: center;
+}
+.iconStyle {
+  color: #4089c8;
+  padding-top: 3px;
+  margin-top: 10px;
+}
+
+.cardWhole {
+  border-radius: 15px !important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.text-center {
+  padding-top: 15px;
+}
+
+.card-body {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  padding-bottom: 15px !important;
+}
