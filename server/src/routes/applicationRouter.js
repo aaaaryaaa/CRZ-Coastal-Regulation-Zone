@@ -332,65 +332,101 @@ applicationRouter
     }
   });
 
+// applicationRouter
+//   .route("/rejectApplication")
+//   .all((req, res, next) => {
+//     res.statusCode = 200;
+//     res.setHeader("Content-Type", "text/plain");
+//     next();
+//   })
+//   .post(async (req, res, next) => {
+//     const { applicationId } = req.body;
+//     if (!applicationId || !req.files) {
+//       return res.json({
+//         success: false,
+//         msg: "Error something went wrong",
+//       });
+//     }
+
+//     if (req.cookies && req.cookies.office_token) {
+//       var token = req.cookies.office_token;
+//       jwt.verify(token, JWT_SECRET, (err, user) => {
+//         if (err) {
+//           return res.json({
+//             success: false,
+//             msg: "Error",
+//           });
+//         }
+//         req.user = user;
+//       });
+//     } else {
+//       return res.json({
+//         success: false,
+//         msg: "Error",
+//       });
+//     }
+
+//     const files = req.files;
+//     if (files.rejection) {
+//       try {
+//         await applicationController.uploadApproval(
+//           files.rejection.data,
+//           applicationId
+//         );
+//       } catch (e) {
+//         logger.error(e);
+//         return res.json({
+//           success: false,
+//           msg: "Error",
+//         });
+//       }
+//       return res.json({
+//         success: true,
+//         msg: "Application updated",
+//       });
+//     } else {
+//       return res.json({
+//         success: false,
+//         msg: "Error something went wrong",
+//       });
+//     }
+//   });
+
 applicationRouter
   .route("/rejectApplication")
-  .all((req, res, next) => {
-    res.statusCode = 200;
-    res.setHeader("Content-Type", "text/plain");
-    next();
-  })
-  .post(async (req, res, next) => {
-    const { applicationId } = req.body;
-    if (!applicationId || !req.files) {
-      return res.json({
-        success: false,
-        msg: "Error something went wrong",
-      });
-    }
+  .post(async (req, res) => {
+    try {
+      const { applicationId, reason } = req.body;
 
-    if (req.cookies && req.cookies.office_token) {
-      var token = req.cookies.office_token;
-      jwt.verify(token, JWT_SECRET, (err, user) => {
-        if (err) {
-          return res.json({
-            success: false,
-            msg: "Error",
-          });
-        }
-        req.user = user;
-      });
-    } else {
-      return res.json({
-        success: false,
-        msg: "Error",
-      });
-    }
-
-    const files = req.files;
-    if (files.rejection) {
-      try {
-        await applicationController.uploadApproval(
-          files.rejection.data,
-          applicationId
-        );
-      } catch (e) {
-        logger.error(e);
-        return res.json({
+      if (!applicationId || !reason) {
+        return res.status(400).json({
           success: false,
-          msg: "Error",
+          msg: "Invalid request, missing application ID or rejection reason",
         });
       }
-      return res.json({
+
+      // Verify token
+
+      await applicationController.uploadRejection(reason, applicationId);
+
+      return res.status(200).json({
         success: true,
-        msg: "Application updated",
+        msg: "Application rejected",
       });
-    } else {
-      return res.json({
+    } catch (error) {
+      console.error("Error rejecting application:", error);
+      return res.status(500).json({
         success: false,
-        msg: "Error something went wrong",
+        msg: "Internal server error",
+        error: error.message,
       });
     }
   });
+
+
+
+
+module.exports = applicationRouter;
 
 applicationRouter
   .route("/download")

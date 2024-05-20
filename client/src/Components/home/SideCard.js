@@ -1,6 +1,6 @@
 import React from "react";
 import "./style/SideCard.css";
-import dc from "../../Images/dc.jpeg";
+import dc from "../../Images/dc.jpg";
 import pn from "../../Images/phone.png";
 import { useTranslation } from "react-i18next";
 function SideCard() {

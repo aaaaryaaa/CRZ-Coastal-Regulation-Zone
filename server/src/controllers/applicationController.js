@@ -127,10 +127,27 @@ const uploadApproval = async (data, id) => {
   );
 };
 
-const uploadRejection = async (data, id) => {
+// const uploadRejection = async (data, id) => {
+//   await Application.update(
+//     {
+//       approval: data,
+//       status: "rejected",
+//       updated_on: Date.now(),
+//     },
+//     {
+//       where: {
+//         id: id,
+//       },
+//     }
+//   );
+// };
+
+
+
+const uploadRejection = async (reason, id) => {
   await Application.update(
     {
-      approval: data,
+      rejectionReason: reason,
       status: "rejected",
       updated_on: Date.now(),
     },
@@ -141,6 +158,7 @@ const uploadRejection = async (data, id) => {
     }
   );
 };
+
 
 const download = async (id) => {
   const application = await Application.findOne({
