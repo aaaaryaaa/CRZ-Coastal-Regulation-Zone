@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+
   "scripts": {
     "start": "npx sequelize-cli db:create && node server/app.js",
     "build": "npm install && cd client && npm install && npm run build"
